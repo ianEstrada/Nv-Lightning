@@ -33,25 +33,6 @@ A fresh install has **no profiles at all** — you create them, with your own na
 `%ProgramData%\Nv-Lightning\profiles.json` (one file, easy to back up). If that file is ever
 unreadable it is parked as `profiles.json.bad-<timestamp>`, never deleted.
 
-## Command line
-
-```
---diag               report what your card exposes (read-only)
---nvapply            apply the stored tuning without the UI (what the logon task runs)
---profiles-check     list your profiles and their values
---profiles-selftest  self-test the profile storage
---ring-tail prev N   last N telemetry lines; "prev" = the session before the crash
-```
-
-## Troubleshooting
-
-- **A value does not apply** → run as administrator, and close any other tuning tool.
-- **A tile stays empty** → your card does not expose that sensor; the tool shows nothing rather
-  than a fake number.
-- **Screen went black or the driver reset** → reboot (nothing is written to the GPU's firmware),
-  then apply `0` on what you changed or load a known-good profile.
-- **Something crashed** → `Nv-Lightning.exe --ring-tail prev 200` shows the last seconds.
-
 ## Why this tool
 
 - **Turing and newer** — covers the generations several tuning tools skip.
