@@ -62,7 +62,8 @@ optional shutdown timer.
 
 ## Install and use
 
-1. Download `Nv-Lightning.exe` from the **[releases page](https://github.com/ianEstrada/Nv-Lightning/releases)**.
+1. Download `Nv-Lightning.exe` from the **[releases page](https://github.com/ianEstrada/Nv-Lightning/releases)**
+   (the binary is distributed there, not in the repository).
 2. Run it **as administrator** (applying tuning needs it; monitoring alone does not).
 3. **TUNING** → set what you want → **Apply All**. The dialog tells you which domains your card
    reports as ready.
@@ -82,14 +83,24 @@ ever becomes unreadable it is parked as `profiles.json.bad-<timestamp>`, never d
 
 Inspired by **[mVolt+](https://github.com/b00nz/mVolt)**, which targets Blackwell (RTX 50) and
 showed what talking to the driver directly can expose. A caution that comes with that lineage:
-these are undocumented driver interfaces, and NVIDIA can break them with a driver update — it
-already happened to mVolt+ once.
+those interfaces are not documented by the vendor, and it can change or break them with a driver
+update — it already happened to mVolt+ once.
+
+## Legal
+
+Nv-Lightning is an **independent third-party project, not affiliated with or endorsed by NVIDIA**.
+NVIDIA, GeForce and RTX are trademarks of NVIDIA Corporation. NVIDIA Profile Inspector is the
+work of its own author and keeps its own license.
+
+It uses driver interfaces that the vendor does not document and can change or stop working with
+a driver update. You are responsible for using it in accordance with the license terms of your
+hardware and driver.
 
 ## Credits
 
 - **Lightning** — the tool, the XBAR/SYS domain work and the driver research behind it.
 - **Succes** — collaboration on the NIP / ReBAR profile research and the bundled `.nip` profiles.
-- **Orbmu2k** — author of NVIDIA Profile Inspector, bundled inside the tool (its own license).
+- **Orbmu2k** — author of NVIDIA Profile Inspector, bundled inside the tool (MIT license).
 
 ## License
 
