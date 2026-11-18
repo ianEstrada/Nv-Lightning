@@ -109,5 +109,7 @@ hardware and driver.
 
 ## License
 
-**CC BY-ND 4.0** — free to use and share, no modified redistributions, attribution required.
-Full text: [LICENSE.md](LICENSE.md).
+**MIT** — use it, fork it, ship it, sell it; just keep the copyright notice.
+Full text: [LICENSE](LICENSE).
+
+Bundled third-party work keeps its own license (NVIDIA Profile Inspector — MIT, © Orbmu2k).
