@@ -1,7 +1,8 @@
 # Nv-Lightning
 
-Windows tuning and monitoring tool for NVIDIA GPUs. It talks to the driver directly, verifies
-every value it writes, and covers **Turing and newer** (developed and verified on an RTX 2080).
+**by Lightning** — Windows tuning and monitoring tool for NVIDIA GPUs. It talks to the driver
+directly, verifies every value it writes, and covers **Turing and newer** (developed and
+verified on an RTX 2080).
 
 ## The app, view by view
 
@@ -62,8 +63,12 @@ optional shutdown timer.
 
 ## Install and use
 
+**Requirements:** Windows 10/11 64-bit, an NVIDIA GPU from Turing onward, and the free
+[.NET 9 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/9.0).
+
 1. Download `Nv-Lightning.exe` from the **[releases page](https://github.com/ianEstrada/Nv-Lightning/releases)**
-   (the binary is distributed there, not in the repository).
+   (the binary is distributed there, not in the repository). Each release lists the SHA-256 of
+   the exact file — check it before running anything.
 2. Run it **as administrator** (applying tuning needs it; monitoring alone does not).
 3. **TUNING** → set what you want → **Apply All**. The dialog tells you which domains your card
    reports as ready.
